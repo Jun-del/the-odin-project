@@ -7,84 +7,126 @@
       name="description"
       content="The Odin Project's foundation course project 2: Odin Recipes"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Odin Landing Page</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav>
-        <h1>Header Logo</h1>
+        <h1>Steel Ball Run</h1>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li><a href="#hero-id">Hero Section</a></li>
+          <li><a href="#information-id">Information Section</a></li>
+          <li><a href="#quote-id">Quote Section</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section>
-        <div>
+      <section class="hero-section" id="hero-id">
+        <div class="hero-main">
           <div>
             <h1>This website is awesome</h1>
+          </div>
+
+          <div>
             <p>
               This website has some subtext that goes here under the main title.
               It's a smaller font and the color is lower contrast
             </p>
-            <button>Sign up</button>
           </div>
 
           <div>
-            <img src="" alt="" />
+            <a href="#quote-id" class="no-style-a">
+              <button>Sign up</button>
+            </a>
           </div>
         </div>
-      </section>
 
-      <section>
         <div>
-          <h1>Some random information.</h1>
-
-          <div>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
+          <img
+            src="./assets/hero-banner.jpg"
+            alt="Gyro Zeppeli looking at distance in the rain."
+            width="500px"
+            height="auto"
+            loading="eager"
+            fetchpriority="high"
+          />
         </div>
       </section>
 
-      <section>
+      <section class="information-section" id="information-id">
+        <h1>Steel Ball Run Characters</h1>
+
+        <!-- TODO: alt -->
+        <ul>
+          <li>
+            <img src="./assets/johnny.jpg" alt="Johnny Joestar" />
+            <p>this is some subtext under an illustration or image</p>
+          </li>
+
+          <li>
+            <img src="./assets/gyro.jpg" alt="Gyro Zeppeli" />
+
+            <p>this is some subtext under an illustration or image</p>
+          </li>
+
+          <li>
+            <img src="./assets/dio.jpg" alt="Diego Brando" />
+
+            <p>this is some subtext under an illustration or image</p>
+          </li>
+
+          <li>
+            <img src="./assets/valentine.jpg" alt="Funny Valentine" />
+
+            <p>this is some subtext under an illustration or image</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="quote-section" id="quote-id">
         <div>
           <blockquote
             cite="https://www.theodinproject.com/lessons/foundations-landing-page"
           >
-            This is an inspiring quote, or a testimonial from a customer. Maybe
-            it's just filling up space, or maybe people actually read it. Who
-            knows? All I know is that it looks nice.
+            <p>
+              My name is Yoshikage Kira. I’m 33 years old. My house is in the
+              northeast section of Morioh, where all the villas are, and I am
+              not married. I work as an employee for the Kame Yu department
+              stores, and I get home every day by 8 PM at the latest. I don’t
+              smoke, but I occasionally drink.
+            </p>
           </blockquote>
 
-          <cite>-Thor, God of Thunder</cite>
+          <cite>-Yoshikage Kira, Hand Connoisseur</cite>
         </div>
       </section>
 
-      <section>
+      <section class="signup-section">
         <div>
-          <h1>Call to action! It's time!</h1>
-
           <div>
+            <h1>Call to action! It's time!</h1>
             <p>
               Sign up for our product by clicking that button right over there!
             </p>
-
-            <button>Sign up</button>
           </div>
+
+          <a href="#top" class="no-style-a">
+            <button>Sign up</button>
+          </a>
         </div>
       </section>
     </main>
 
     <footer>
-      <h1>Copyright &copy; Wei Jun @ The Odin Project 2023</h1>
+      <p>Copyright &copy; Wei Jun @ The Odin Project 2023</p>
     </footer>
   </body>
 </html>
